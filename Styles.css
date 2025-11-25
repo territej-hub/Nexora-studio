@@ -1,0 +1,73 @@
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background: #0d0d0f;
+    color: white;
+}
+
+header {
+    text-align: center;
+    padding: 20px;
+    border-bottom: 2px solid #4D7CFF;
+}
+
+.logo {
+    width: 180px;
+}
+
+nav {
+    margin-top: 15px;
+}
+
+nav a {
+    margin: 0 15px;
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+nav a:hover, nav a.active {
+    color: #A259FF;
+}
+
+.hero {
+    text-align: center;
+    padding: 100px 20px;
+    background: linear-gradient(120deg, #4D7CFF, #A259FF);
+}
+
+.container {
+    max-width: 900px;
+    width: 90%;
+    margin: auto;
+    padding: 40px 0;
+}
+
+.service-list li {
+    padding: 10px 0;
+}
+
+.contact-form input, 
+.contact-form textarea {
+    width: 100%;
+    padding: 12px;
+    margin: 10px 0;
+    background: #1a1a1d;
+    border: 1px solid #4D7CFF;
+    color: white;
+}
+
+.contact-form button {
+    padding: 12px 20px;
+    background: #4D7CFF;
+    border: none;
+    color: white;
+    cursor: pointer;
+}
+
+footer {
+    text-align: center;
+    background: #000;
+    padding: 30px;
+    margin-top: 40px;
+}
