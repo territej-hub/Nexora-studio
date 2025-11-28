@@ -1,3 +1,4 @@
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -6,8 +7,41 @@
     <title>Nexora Studios</title>
     <link rel="stylesheet" href="styles.css">
 </head>
+
 <body>
-    <section id="projects" class="projects section">
+
+<!-- 🌗 THEME SWITCH BUTTON -->
+<button class="theme-toggle" onclick="toggleTheme()">🌓</button>
+
+<!-- ⭐ HERO SECTION -->
+<header class="hero">
+    <div class="hero-content">
+        <h1 class="fade-in">Nexora Studios</h1>
+        <p class="fade-in delay-1">Creative • Design • Digital Branding</p>
+        <a href="#contact" class="btn fade-in delay-2">Contact Us</a>
+    </div>
+</header>
+
+<!-- ⭐ ABOUT -->
+<section class="section fade-in">
+    <h2>About Us</h2>
+    <p>We build modern digital identities for brands and businesses.  
+    Creative design, branding and digital solutions that stand out.</p>
+</section>
+
+<!-- ⭐ SERVICES -->
+<section class="section fade-in">
+    <h2>Our Services</h2>
+    <ul>
+        <li>Brand Identity Design</li>
+        <li>Professional Logo Design</li>
+        <li>Web Design</li>
+        <li>Digital Branding</li>
+    </ul>
+</section>
+
+<!-- ⭐ PROJECTS GRID -->
+<section id="projects" class="projects section fade-in">
     <h2 class="section-title">Our Projects</h2>
 
     <div class="projects-grid">
@@ -33,62 +67,33 @@
     </div>
 </section>
 
-<button class="theme-toggle" onclick="toggleTheme()">🌓</button>
+<!-- ⭐ CONTACT -->
+<section class="section fade-in" id="contact">
+    <h2>Contact Us</h2>
+    <p>Email: <a href="mailto:Territej@gmail.com">Territej@gmail.com</a></p>
+    <p>Phone: <a href="tel:+2547XXXXXXXX">+254 7XX XXX XXX</a></p>
+</section>
 
-    <!-- HERO SECTION -->
-    <header class="hero">
-        <div class="hero-content">
-            <h1>Nexora Studios</h1>
-            <p>Creative • Design • Digital Branding</p>
-            <a href="#contact" class="btn">Contact Us</a>
-        </div>
-    </header>
+<!-- ⭐ FOOTER -->
+<footer>
+    <p>© 2025 Nexora Studios. All Rights Reserved.</p>
+</footer>
 
-    <!-- ABOUT SECTION -->
-    <section class="section">
-        <h2>About Us</h2>
-        <p>We build modern digital identities for brands and businesses.  
-        Creative design, branding and digital solutions that stand out.</p>
-    </section>
-
-    <!-- SERVICES SECTION -->
-    <section class="section">
-        <h2>Our Services</h2>
-        <ul>
-            <li>Brand Identity Design</li>
-            <li>Professional Logo Design</li>
-            <li>Web Design</li>
-            <li>Digital Branding</li>
-        </ul>
-    </section>
-
-    <!-- CONTACT SECTION -->
-    <section class="section" id="contact">
-        <h2>Contact Us</h2>
-        <p>Email: <a href="mailto:Territej@gmail.com">Territej@gmail.com</a></p>
-        <p>Phone: <a href="tel:+2547XXXXXXXX">+254 7XX XXX XXX</a></p>
-    </section>
-
-    <footer>
-        <p>© 2025 Nexora Studios. All Rights Reserved.</p>
-    </footer>
+<!-- ⭐ THEME + ANIMATION SCRIPT -->
 <script>
-    // Load saved mode on page load
-    if (localStorage.getItem("theme") === "dark") {
-        document.body.classList.add("dark-mode");
-    }
+    // Load saved mode
+    const savedTheme = localStorage.getItem("theme");
+    if (savedTheme) document.body.classList.add(savedTheme);
 
     function toggleTheme() {
-        document.body.classList.toggle("dark-mode");
-
-        if (document.body.classList.contains("dark-mode")) {
+        document.body.classList.toggle("dark");
+        if (document.body.classList.contains("dark")) {
             localStorage.setItem("theme", "dark");
         } else {
-            localStorage.setItem("theme", "light");
+            localStorage.removeItem("theme");
         }
     }
 </script>
 
 </body>
 </html>
-
