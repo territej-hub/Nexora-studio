@@ -1,121 +1,4 @@
-
-/* Global style */
-body {
-    margin: 0;
-    font-family: Arial, sans-serif;
-    background: #f5f5f5;
-    color: #222;
-    scroll-behavior: smooth;
-}
-
-/* Animation keyframes */
-@keyframes fadeUp {
-    0% { opacity: 0; transform: translateY(20px); }
-    100% { opacity: 1; transform: translateY(0); }
-}
-
-@keyframes fadeIn {
-    0% { opacity: 0; }
-    100% { opacity: 1; }
-}
-
-/* HERO SECTION */
-.hero {
-    height: 100vh;
-    background: url("assets/images/bg.jpg") center/cover no-repeat;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    text-align: center;
-    color: white;
-    padding: 0 20px;
-    animation: fadeIn 1.2s ease-in-out;
-}
-
-.hero-content h1 {
-    font-size: 3rem;
-    margin: 0;
-    opacity: 0;
-    animation: fadeUp 1.2s ease-out forwards;
-    animation-delay: 0.3s;
-}
-
-.hero-content p {
-    font-size: 1.3rem;
-    margin: 10px 0 25px;
-    opacity: 0;
-    animation: fadeUp 1.2s ease-out forwards;
-    animation-delay: 0.6s;
-}
-
-.btn {
-    display: inline-block;
-    background: #ff6600;
-    color: white;
-    padding: 12px 25px;
-    text-decoration: none;
-    border-radius: 5px;
-    font-size: 1rem;
-    opacity: 0;
-    animation: fadeUp 1.2s ease-out forwards;
-    animation-delay: 0.9s;
-}
-
-/* Sections */
-.section {
-    padding: 60px 20px;
-    max-width: 900px;
-    margin: auto;
-    opacity: 0;
-    animation: fadeUp 1.2s ease-out forwards;
-}
-
-.section:nth-child(1) { animation-delay: 0.3s; }
-.section:nth-child(2) { animation-delay: 0.5s; }
-.section:nth-child(3) { animation-delay: 0.7s; }
-
-.section h2 {
-    font-size: 2rem;
-    margin-bottom: 20px;
-}
-
-/* Footer */
-footer {
-    text-align: center;
-    padding: 20px;
-    background: #000;
-    color: white;
-    margin-top: 50px;
-    opacity: 0;
-    animation: fadeUp 1.2s ease-out forwards;
-    animation-delay: 0.9s;
-}
-/* Theme Toggle Button */
-.theme-toggle {
-    position: fixed;
-    top: 20px;
-    right: 20px;
-    padding: 10px 15px;
-    border: none;
-    background: #fff;
-    color: #000;
-    font-size: 20px;
-    border-radius: 8px;
-    cursor: pointer;
-    box-shadow: 0 0 10px rgba(0,0,0,0.2);
-    z-index: 1000;
-    transition: 0.3s ease;
-}
-
-.theme-toggle:hover {
-    transform: scale(1.1);
-}
-
-/* DARK MODE */
-.dark-mode {
-    background: #121212;
-    color: #e5e5e5;
-}
+/* ---------------- DARK MODE ---------------- */
 
 .dark-mode .hero {
     color: white;
@@ -138,36 +21,23 @@ footer {
     background: #333;
     color: #fff;
 }
-/* Projects Section */
-.projects {
-    padding: 60px 20px;
-    text-align: center;
-    /* Add this to your styles.css to center the Projects section */
+
+.dark-mode .project-card {
+    background: #1e1e1e;
+    box-shadow: 0 4px 12px rgba(255,255,255,0.05);
+}
+
+.dark-mode .project-card p {
+    color: #ccc;
+}
+
+/* ---------------- PROJECTS SECTION ---------------- */
 
 .projects {
     max-width: 900px;
-    margin: 0 auto;  /* centers the whole section */
+    margin: 0 auto;
     padding: 60px 20px;
     text-align: center;
-}
-
-.projects-grid {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
-    gap: 25px;
-    justify-items: center;  /* centers each card */
-}
-
-.project-card {
-    width: 100%;
-    max-width: 300px;
-    background: white;
-    border-radius: 12px;
-    overflow: hidden;
-    box-shadow: 0 4px 12px rgba(0,0,0,0.1);
-    transition: 0.3s ease;
-}
-
 }
 
 .section-title {
@@ -176,25 +46,23 @@ footer {
     margin-bottom: 40px;
 }
 
-/* Grid Layout */
+/* GRID */
 .projects-grid {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
     gap: 25px;
+    justify-items: center;
 }
 
-/* Project Card */
+/* PROJECT CARD */
 .project-card {
+    width: 100%;
+    max-width: 300px;
     background: white;
     border-radius: 12px;
     overflow: hidden;
     box-shadow: 0 4px 12px rgba(0,0,0,0.1);
     transition: 0.3s ease;
-}
-
-.dark-mode .project-card {
-    background: #1e1e1e;
-    box-shadow: 0 4px 12px rgba(255,255,255,0.05);
 }
 
 .project-card:hover {
@@ -217,8 +85,4 @@ footer {
     padding: 0 15px 20px;
     font-size: 15px;
     color: #555;
-}
-
-.dark-mode .project-card p {
-    color: #ccc;
 }
