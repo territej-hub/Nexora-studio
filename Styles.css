@@ -142,6 +142,32 @@ footer {
 .projects {
     padding: 60px 20px;
     text-align: center;
+    /* Add this to your styles.css to center the Projects section */
+
+.projects {
+    max-width: 900px;
+    margin: 0 auto;  /* centers the whole section */
+    padding: 60px 20px;
+    text-align: center;
+}
+
+.projects-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+    gap: 25px;
+    justify-items: center;  /* centers each card */
+}
+
+.project-card {
+    width: 100%;
+    max-width: 300px;
+    background: white;
+    border-radius: 12px;
+    overflow: hidden;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+    transition: 0.3s ease;
+}
+
 }
 
 .section-title {
