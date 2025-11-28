@@ -104,6 +104,42 @@ footer {
     color: #e0e0e0;
     text-shadow: 0 0 10px black;
 }
+/* Hero Section */
+.hero {
+    height: 100vh;
+    background: url("assets/images/bg.jpg") no-repeat center center/cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    color: white;
+    padding: 0 20px;
+}
+
+.hero-content h1 {
+    font-size: 3rem;
+    font-weight: 700;
+    margin-bottom: 10px;
+}
+
+.hero-content p {
+    font-size: 1.2rem;
+    margin-bottom: 20px;
+}
+
+.btn {
+    background: #0066ff;
+    color: white;
+    padding: 12px 25px;
+    border-radius: 25px;
+    text-decoration: none;
+    font-weight: 600;
+    transition: 0.3s ease;
+}
+
+.btn:hover {
+    background: #0047b3;
+}
 
 
 
