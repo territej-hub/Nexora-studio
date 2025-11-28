@@ -79,5 +79,30 @@ footer {
   background: #222;
   color: #fff;
   font-size: 0.9rem;
+}/* HERO SECTION */
+.hero {
+    height: 85vh;
+    background: url('assets/hero-bg.jpg') center/cover no-repeat;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    padding: 0 20px;
 }
+
+.hero h1 {
+    font-size: 48px;
+    color: white;
+    letter-spacing: 1px;
+    margin-bottom: 10px;
+    text-shadow: 0 0 10px black;
+}
+
+.hero p {
+    font-size: 20px;
+    color: #e0e0e0;
+    text-shadow: 0 0 10px black;
+}
+
+
 
