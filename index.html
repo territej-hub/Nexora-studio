@@ -1,99 +1,225 @@
-
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Nexora Studios</title>
-    <link rel="stylesheet" href="styles.css">
-</head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Nexora Studios</title>
 
+  <!-- Google font -->
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;800&display=swap" rel="stylesheet">
+
+  <!-- Your stylesheet -->
+  <link rel="stylesheet" href="styles.css">
+
+</head>
 <body>
 
-<!-- 🌗 THEME SWITCH BUTTON -->
-<button class="theme-toggle" onclick="toggleTheme()">🌓</button>
+  <!-- Theme toggle -->
+  <button class="theme-toggle" id="themeToggle" aria-label="Toggle theme">🌓</button>
 
-<!-- ⭐ HERO SECTION -->
-<header class="hero">
-    <div class="hero-content">
-        <h1 class="fade-in">Nexora Studios</h1>
-        <p class="fade-in delay-1">Creative • Design • Digital Branding</p>
-        <a href="#contact" class="btn fade-in delay-2">Contact Us</a>
+  <!-- NAV -->
+  <nav class="nav">
+    <div class="nav-inner">
+      <div class="brand">
+        <img src="assets/images/logo.png" alt="Nexora Studios" class="logo">
+      </div>
+      <ul class="nav-links">
+        <li><a href="#home">Home</a></li>
+        <li><a href="#services">Services</a></li>
+        <li><a href="#projects">Projects</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+      <a class="cta" href="#contact">Hire Us</a>
     </div>
-</header>
+  </nav>
 
-<!-- ⭐ ABOUT -->
-<section class="section fade-in">
-    <h2>About Us</h2>
-    <p>We build modern digital identities for brands and businesses.  
-    Creative design, branding and digital solutions that stand out.</p>
-</section>
+  <!-- HERO -->
+  <header id="home" class="hero">
+    <div class="hero-bg"></div>
+    <div class="hero-overlay"></div>
 
-<!-- ⭐ SERVICES -->
-<section class="section fade-in">
-    <h2>Our Services</h2>
-    <ul>
-        <li>Brand Identity Design</li>
-        <li>Professional Logo Design</li>
-        <li>Web Design</li>
-        <li>Digital Branding</li>
-    </ul>
-</section>
+    <div class="hero-inner">
+      <div class="hero-left">
+        <h1>Nexora Studios</h1>
+        <p class="lead">Build beautiful, modern digital experiences — branding, web, and UI designed for growth.</p>
+        <div class="hero-actions">
+          <a class="btn primary" href="#contact">Get Started</a>
+          <a class="btn ghost" href="#projects">View Projects</a>
+        </div>
 
-<!-- ⭐ PROJECTS GRID -->
-<section id="projects" class="projects section fade-in">
-    <h2 class="section-title">Our Projects</h2>
+        <div class="feature-row">
+          <div class="feature">
+            <strong>Trusted</strong>
+            <span>Quality-first delivery</span>
+          </div>
+          <div class="feature">
+            <strong>Fast</strong>
+            <span>Rapid, reliable builds</span>
+          </div>
+          <div class="feature">
+            <strong>Modern</strong>
+            <span>Up-to-date UI & UX</span>
+          </div>
+        </div>
+      </div>
 
-    <div class="projects-grid">
+      <div class="hero-cards">
+        <div class="glass-card">
+          <h4>Web Design</h4>
+          <p>Responsive, performance-focused websites.</p>
+        </div>
+        <div class="glass-card">
+          <h4>Branding</h4>
+          <p>Logo, identity & guidelines that scale.</p>
+        </div>
+        <div class="glass-card">
+          <h4>Profile Management</h4>
+          <p>Complete profiles for platforms & clients.</p>
+        </div>
+      </div>
+    </div>
+  </header>
 
+  <!-- SERVICES -->
+  <section id="services" class="section services">
+    <div class="container">
+      <h2 class="section-title">Services</h2>
+      <div class="services-grid">
+        <article class="service-card">
+          <div class="s-icon">🖥️</div>
+          <h3>Web Design</h3>
+          <p>Modern, responsive UIs that convert visitors into customers.</p>
+        </article>
+
+        <article class="service-card">
+          <div class="s-icon">🎨</div>
+          <h3>Logo & Branding</h3>
+          <p>Professional identity systems and logos for memorable brands.</p>
+        </article>
+
+        <article class="service-card">
+          <div class="s-icon">📁</div>
+          <h3>Profile Management</h3>
+          <p>Optimized profiles for marketplaces and professional platforms.</p>
+        </article>
+
+        <article class="service-card">
+          <div class="s-icon">⚙️</div>
+          <h3>Support & Maintenance</h3>
+          <p>Updates, improvements and fast issue resolution.</p>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- PROJECTS -->
+  <section id="projects" class="section projects">
+    <div class="container">
+      <h2 class="section-title">Featured Projects</h2>
+
+      <div class="projects-grid">
         <div class="project-card">
-            <img src="assets/images/project1.jpg" alt="Project 1">
+          <img src="assets/images/project1.jpg" alt="Project 1">
+          <div class="project-body">
             <h3>Brand Identity Design</h3>
-            <p>Logo design + brand kit for a modern startup.</p>
+            <p>Logo system & brand kit for a startup.</p>
+          </div>
         </div>
 
         <div class="project-card">
-            <img src="assets/images/project2.jpg" alt="Project 2">
+          <img src="assets/images/project2.jpg" alt="Project 2">
+          <div class="project-body">
             <h3>Business Website</h3>
-            <p>A clean responsive business website built with HTML/CSS.</p>
+            <p>Fast, responsive marketing site built with modern best practices.</p>
+          </div>
         </div>
 
         <div class="project-card">
-            <img src="assets/images/project3.jpg" alt="Project 3">
-            <h3>Social Media Design</h3>
-            <p>Creative content for social media campaigns.</p>
+          <img src="assets/images/project3.jpg" alt="Project 3">
+          <div class="project-body">
+            <h3>Social Media Campaign</h3>
+            <p>Creative visuals and templates for social channels.</p>
+          </div>
         </div>
-
+      </div>
     </div>
-</section>
+  </section>
 
-<!-- ⭐ CONTACT -->
-<section class="section fade-in" id="contact">
-    <h2>Contact Us</h2>
-    <p>Email: <a href="mailto:Territej@gmail.com">Territej@gmail.com</a></p>
-    <p>Phone: <a href="tel:+2547XXXXXXXX">+254 7XX XXX XXX</a></p>
-</section>
+  <!-- CONTACT -->
+  <section id="contact" class="section contact">
+    <div class="container contact-grid">
+      <div>
+        <h2>Contact</h2>
+        <p>Want to work together? Drop us a message — we reply quickly.</p>
 
-<!-- ⭐ FOOTER -->
-<footer>
-    <p>© 2025 Nexora Studios. All Rights Reserved.</p>
-</footer>
+        <p class="contact-info">✉️ <a href="mailto:Territej@gmail.com">Territej@gmail.com</a></p>
+        <p class="contact-info">📞 <a href="tel:+2547XXXXXXXX">+254 7XX XXX XXX</a></p>
+      </div>
 
-<!-- ⭐ THEME + ANIMATION SCRIPT -->
-<script>
-    // Load saved mode
-    const savedTheme = localStorage.getItem("theme");
-    if (savedTheme) document.body.classList.add(savedTheme);
+      <form class="contact-form" onsubmit="event.preventDefault(); alert('Thanks — message demo.');">
+        <input name="name" placeholder="Your name" required>
+        <input name="email" type="email" placeholder="Email" required>
+        <textarea name="message" rows="5" placeholder="Tell us about your project" required></textarea>
+        <button class="btn primary" type="submit">Send Message</button>
+      </form>
+    </div>
+  </section>
 
-    function toggleTheme() {
-        document.body.classList.toggle("dark");
-        if (document.body.classList.contains("dark")) {
-            localStorage.setItem("theme", "dark");
-        } else {
-            localStorage.removeItem("theme");
-        }
-    }
-</script>
+  <!-- FOOTER -->
+  <footer class="footer">
+    <div class="container footer-grid">
+      <div class="footer-left">
+        <img src="assets/images/logo.png" alt="Nexora" class="footer-logo">
+        <p class="muted">Nexora Studios — Creative digital solutions</p>
+      </div>
+
+      <div class="footer-links">
+        <h4>Quick Links</h4>
+        <a href="#services">Services</a>
+        <a href="#projects">Projects</a>
+        <a href="#contact">Contact</a>
+      </div>
+
+      <div>
+        <h4>Get In Touch</h4>
+        <p class="contact-info">✉️ <a href="mailto:Territej@gmail.com">Territej@gmail.com</a></p>
+        <p class="contact-info">📞 <a href="tel:+2547XXXXXXXX">+254 7XX XXX XXX</a></p>
+      </div>
+    </div>
+
+    <p class="copyright">© 2025 Nexora Studios. All Rights Reserved.</p>
+  </footer>
+
+  <!-- SCRIPT: theme toggle + simple animations -->
+  <script>
+    // theme toggle (persist)
+    const toggleBtn = document.getElementById('themeToggle');
+    const root = document.documentElement;
+    const saved = localStorage.getItem('nexora-theme');
+    if (saved === 'dark') document.body.classList.add('dark');
+
+    toggleBtn.addEventListener('click', () => {
+      document.body.classList.toggle('dark');
+      localStorage.setItem('nexora-theme', document.body.classList.contains('dark') ? 'dark' : 'light');
+    });
+
+    // small reveal on scroll
+    const reveal = (el, delay=0) => {
+      el.style.opacity = 0;
+      el.style.transform = 'translateY(14px)';
+      setTimeout(()=> {
+        el.style.transition = 'opacity 600ms ease, transform 600ms ease';
+        el.style.opacity = 1;
+        el.style.transform = 'translateY(0)';
+      }, delay);
+    };
+
+    window.addEventListener('load', ()=>{
+      document.querySelectorAll('.hero-content, .glass-card, .service-card, .project-card, .section-title').forEach((el,i)=>{
+        reveal(el, i*120);
+      });
+    });
+  </script>
 
 </body>
 </html>
